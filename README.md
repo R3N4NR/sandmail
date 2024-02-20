@@ -55,6 +55,10 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue para r
 
 Este projeto está licenciado sob a [Licença MIT](https://opensource.org/licenses/MIT).
 
+## Autor
+
+Renan Ramalho - re-nan1@outlook.com - linkedin.com/in/renan-rramalho-dev/
 ---
 
 Sinta-se à vontade para personalizar este README de acordo com as necessidades específicas do seu projeto. Boa sorte com o desenvolvimento!
+
