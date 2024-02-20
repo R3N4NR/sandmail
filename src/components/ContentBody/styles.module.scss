@@ -1,0 +1,24 @@
+.logo{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: yellow;
+    img{
+        height: 60px;
+        width: 60px;
+    }
+}
+
+.textArea{
+    width:100%;
+    justify-content: center;
+    display: flex;
+}
+
+.submitButton{
+
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
