@@ -1,28 +1,34 @@
 import styled from "styled-components"
 import styles from './styles.module.scss'
-interface InputProps{
+import { ChangeEvent } from "react";
+
+interface InputProps {
     type: string;
     label?: string;
     value?: string;
-    handleChange?: (e:Event) => void 
+    handleChange?: (e: ChangeEvent<HTMLInputElement>) => void;
 }
-export const Input = ({label,type,handleChange,value}:InputProps) => {
 
-    const Input = styled.input`
-    height:30px;
+// Define styled components outside of the Input component
+const InputStyled = styled.input`
+    height: 30px;
     width: 70%;
     border-radius: 20px;
     border: var(--input-border);
     padding-left: 40px;
-    `;
-    const Label = styled.label`
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+`;
+
+const LabelStyled = styled.label`
     width: 70%;
     border-radius: 20px;
-    `;
+`;
+
+export const Input = ({ label, type, handleChange, value }: InputProps) => {
     return (
         <div className={styles.inputBox}>
-        <Label>{label}</Label>
-        <Input type={type}/>
+            <LabelStyled>{label}</LabelStyled>
+            <InputStyled onChange={handleChange} type={type} value={value} />
         </div>
     )
 }
